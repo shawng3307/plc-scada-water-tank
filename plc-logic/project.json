@@ -22,9 +22,51 @@
             "name": "instance0",
             "task": "task0",
             "program": "main"
+          },
+          {
+            "name": "tank_sim_instance",
+            "task": "task0",
+            "program": "tank_simulation"
           }
         ],
-        "globalVariables": []
+        "globalVariables": [
+          {
+            "name": "tank_level",
+            "type": {
+              "definition": "base-type",
+              "value": "INT"
+            },
+            "class": "global",
+            "location": "",
+            "documentation": "",
+            "debug": false,
+            "initialValue": "50"
+          },
+          {
+            "name": "pump_on",
+            "type": {
+              "definition": "base-type",
+              "value": "BOOL"
+            },
+            "class": "global",
+            "location": "",
+            "documentation": "",
+            "debug": false,
+            "initialValue": "FALSE"
+          },
+          {
+            "name": "timer_pulse",
+            "type": {
+              "definition": "base-type",
+              "value": "BOOL"
+            },
+            "class": "global",
+            "location": "",
+            "documentation": "",
+            "debug": false,
+            "initialValue": "FALSE"
+          }
+        ]
       }
     },
     "libraries": [],
@@ -34,7 +76,8 @@
           "tank_level",
           "pump_on",
           "low_level",
-          "high_level"
+          "high_level",
+          "timer_pulse"
         ]
       }
     }
