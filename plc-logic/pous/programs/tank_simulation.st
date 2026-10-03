@@ -7,7 +7,6 @@ PROGRAM tank_simulation
     timer_pulse : BOOL;
   END_VAR
 
-
 IF timer_pulse then
     if pump_on then
         tank_level := tank_level + 2;

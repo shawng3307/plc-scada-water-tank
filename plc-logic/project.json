@@ -36,11 +36,10 @@
               "definition": "base-type",
               "value": "INT"
             },
-            "class": "global",
-            "location": "",
+            "location": "%MW0",
+            "initialValue": "50",
             "documentation": "",
-            "debug": false,
-            "initialValue": "50"
+            "debug": true
           },
           {
             "name": "pump_on",
@@ -48,11 +47,10 @@
               "definition": "base-type",
               "value": "BOOL"
             },
-            "class": "global",
-            "location": "",
+            "location": "%QX0.0",
+            "initialValue": "FALSE",
             "documentation": "",
-            "debug": false,
-            "initialValue": "FALSE"
+            "debug": true
           },
           {
             "name": "timer_pulse",
@@ -60,23 +58,32 @@
               "definition": "base-type",
               "value": "BOOL"
             },
-            "class": "global",
             "location": "",
+            "initialValue": "FALSE",
             "documentation": "",
-            "debug": false,
-            "initialValue": "FALSE"
+            "debug": true
           }
         ]
       }
     },
     "libraries": [],
     "debugVariables": {
+      "global": [
+        "tank_level",
+        "pump_on",
+        "timer_pulse"
+      ],
       "pous": {
         "main": [
-          "tank_level",
-          "pump_on",
           "low_level",
           "high_level",
+          "tank_level",
+          "pump_on",
+          "timer_pulse"
+        ],
+        "tank_simulation": [
+          "tank_level",
+          "pump_on",
           "timer_pulse"
         ]
       }

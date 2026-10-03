@@ -13,7 +13,6 @@ PROGRAM main
   VAR_INPUT
   END_VAR
 
-
 {
   "name": "main",
   "rungs": [
